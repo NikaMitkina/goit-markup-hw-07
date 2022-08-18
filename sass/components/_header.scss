@@ -1,0 +1,142 @@
+.header {
+
+    border-bottom: 1px solid #ECECEC;
+}
+.header__box {
+    display: flex;
+
+}
+
+
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    color: #212121;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}  
+.web {
+    color: var(--acsent-color);
+}   
+
+.header__menu {
+    margin-left: 93px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: row;
+}
+.contacts li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header__menu{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__menu li:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.header__menu .header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    position: relative;
+    color: #212121;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active{
+        color: var(--acsent-color);
+    }
+}
+
+
+
+
+.header__active-link{
+    color:  #2196F3;
+
+    &::before{
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        content: "";
+        bottom: -1px;
+        background: #2196f3;
+        border-radius: 2px;
+    }
+;
+}
+.contacts__link {
+    color: var(--second-text-color);
+    text-decoration: none;
+    font-style: normal;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active{
+        color: var(--acsent-color);
+    }
+}
+
+
+
+.contacts__icon-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active{
+        color: #2196F3;
+    }
+
+}
+
+
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

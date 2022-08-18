@@ -1,0 +1,28 @@
+.article__item {
+    margin-right: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.article__box {
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+
+    height: 120px;
+}
+.article__title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.article__text {
+    color: var(--second-text-color);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
